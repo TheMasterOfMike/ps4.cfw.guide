@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<style>
+		:root {
+			--c-bg: #fff;
+		}
+
+		html.dark {
+			--c-bg: #22272e;
+		}
+
+		html, body {
+			background-color: var(--c-bg);
+		}
+	</style>
+	<script>
+		(function() {
+			const userMode = localStorage.getItem('vuepress-color-scheme');
+			const systemDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+			if (userMode === 'dark' || (userMode !== 'light' && systemDarkMode)) {
+				document.documentElement.classList.toggle('dark', true);
+			}
+		})();
+	</script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"><title>PS4 Guide</title><meta name="description" content="A very much incomplete PS4 modding guide, from stock to jailbroken.">
+<link rel="preload" href="/assets/js/runtime~app.c2e1f775.js" as="script"><link rel="preload" href="/assets/css/styles.f68661c6.css" as="style"><link rel="preload" href="/assets/js/827.7cca004d.js" as="script"><link rel="preload" href="/assets/js/app.2e164aca.js" as="script">
+<link rel="stylesheet" href="/assets/css/styles.f68661c6.css">
+</head>
+<body>
+	<div id="app"><!--[--><div class="theme-container"><div class="theme-default-content"><h1>404</h1><blockquote>How did we get here?</blockquote><a href="/" class="">Take me home</a></div></div><!----><!--]--></div>
+	<script src="/assets/js/runtime~app.c2e1f775.js" defer></script><script src="/assets/js/827.7cca004d.js" defer></script><script src="/assets/js/app.2e164aca.js" defer></script>
+</body>
+</html>
